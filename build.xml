@@ -25,6 +25,8 @@
 					<!--Message flows for its corresponding projects which has given in cvsCheckout.properties-->
 					<arg value="-o" />
 					<arg line="@{pName}\${@{pName}.flow_name}" />
+					<arg line="@{pName}\IIB10_Autodeploy_Jenkins_Compute.esql" />
+				<arg value="-deployAsSource" />
 				</exec>	
 				</sequential>
 			</for>			
