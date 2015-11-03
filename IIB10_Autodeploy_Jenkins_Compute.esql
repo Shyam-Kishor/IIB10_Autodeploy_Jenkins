@@ -5,7 +5,7 @@ CREATE COMPUTE MODULE IIB10_Autodeploy_Jenkins_Compute
 	BEGIN
 		-- CALL CopyMessageHeaders();
 		-- CALL CopyEntireMessage();
-		SET OutputRoot.XMLNSC.name='Shaym';
+		SET OutputRoot.XMLNSC.name='Shaym Kishor';
 		RETURN TRUE;
 	END;
 
