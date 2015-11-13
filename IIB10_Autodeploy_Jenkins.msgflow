@@ -6,14 +6,14 @@
     <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/IIB10_Autodeploy_Jenkins/icons/full/obj16/IIB10_Autodeploy_Jenkins.gif"/>
     <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/IIB10_Autodeploy_Jenkins/icons/full/obj30/IIB10_Autodeploy_Jenkins.gif"/>
     <composition>
-      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="165,125" queueName="IN" messageDomainProperty="XMLNSC">
-        <translation xmi:type="utility:ConstantString" string="MQ Input"/>
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="150,145" queueName="IN" messageDomainProperty="XMLNSC">
+        <translation xmi:type="utility:ConstantString" string="Source"/>
       </nodes>
-      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="347,125" queueName="OUT">
-        <translation xmi:type="utility:ConstantString" string="MQ Output"/>
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="399,146" queueName="OUT">
+        <translation xmi:type="utility:ConstantString" string="Target"/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="275,172" computeExpression="esql://routine/#IIB10_Autodeploy_Jenkins_Compute.Main">
-        <translation xmi:type="utility:ConstantString" string="Compute"/>
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="275,145" computeExpression="esql://routine/#IIB10_Autodeploy_Jenkins_Compute.Main">
+        <translation xmi:type="utility:ConstantString" string="Transformation"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
